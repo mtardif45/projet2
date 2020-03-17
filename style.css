@@ -15,8 +15,6 @@ body
 .liseret
 {
     width:30%;
-    padding-left:20px;
-    padding-right: 20px;
     background:#e1bee7;
 		font-weight:bold;
 }
@@ -38,6 +36,14 @@ h3
 	text-align: center;
 	color:#e1bee7;
 	background-color:#3a3b3c;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+section
+{
+ text-align: justify;
+ padding: 1.5em;
 }
 
 /*icones loisirs*/
@@ -114,6 +120,20 @@ table
 	width: 100%;
 }
 
+ul
+{
+	list-syle: none;
+}
+
+li::before
+{
+	content:"•";
+	color: #e1bee7;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1.5em;
+}
+
 .recommandations
 {
 	display: flex;
@@ -121,12 +141,13 @@ table
 	justify-content: space-around;
 }
 
+/*illustration des titres avec fontawesome*/
 #icone
 {
 	color: #e1bee7;
+	display: inline-block;
+	margin-right: 2em;
 }
-
-
 
 /*
 @media screen and (max-width: 1024px)
