@@ -3,7 +3,7 @@ body
 {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #3a3b3c;
-	width: 1200px;
+	width: 100%;
 }
 
 .wrap
@@ -23,12 +23,11 @@ body
 img
 {
 	border-radius: 50px;
-	overflow: hidden;
 	border-style: ridge;
-	width: 120px;
-	height: 120px;
+	width: 80px;
+	height: 80px;
 	margin-left: 30%;
-	margin-top: 5%;
+	margin-top: 30%;
 }
 /*à propos de moi*/
 h3
@@ -40,50 +39,49 @@ h3
 	padding-right: 10px;
 }
 
-section
+ul
 {
- text-align: justify;
- padding: 1.5em;
+	list-style: none;
 }
 
 /*icones loisirs*/
 .loisirs
 {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .judo
 {
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50px;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
 .fitness
 {
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50px;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
 .cuisine
 {
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50px;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
 /*partie droite, contenu de la page*/
 .contenu
 {
-    padding-left: 20px;
-    padding-right:20px;
-    font-size: 14px;
+	width:70%;
+  padding-left: 20px;
+  padding-right:20px;
+  font-size: 14px;
 }
 
 /*première section avec nom + métier */
@@ -125,13 +123,14 @@ ul
 	list-syle: none;
 }
 
-li::before
+#dotcircle
 {
-	content:"•";
-	color: #e1bee7;
-	display: inline-block;
-	width: 1em;
-	margin-left: -1.5em;
+	color:#e1bee7;
+}
+
+#circle
+{
+color:#e1bee7
 }
 
 .recommandations
@@ -149,14 +148,5 @@ li::before
 	margin-right: 2em;
 }
 
-/*
-@media screen and (max-width: 1024px)
-{
-    p
-    {
-
-    color: red;
-    background-color:black;
-    font-size:1.2em;
-    }
-}
+/* partie Responsive -media queries */
+@media screen and (max-width: 680px)
