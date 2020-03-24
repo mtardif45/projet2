@@ -15,6 +15,7 @@ body
     width: 100%;
 }
 
+/*partie gauche, le liseret */
 .liseret
 {
     width:30%;
@@ -22,7 +23,6 @@ body
 		font-weight:bold;
 }
 
-/*partie gauche, le liseret */
 img
 {
 	border-radius: 60px;
@@ -47,7 +47,7 @@ h3+p
 	text-align: justify;
 	padding-left: 2em;
 	padding-right: 2em;
-	padding-bottom: 310px;
+	padding-bottom: 300px;
 	}
 
 ul
@@ -67,6 +67,7 @@ ul
 {
 	border-radius: 60px;
 	border: solid 1px black;
+	margin-bottom: 20px;
 }
 
 /*partie droite, contenu de la page*/
@@ -108,12 +109,14 @@ ul
 h1
 {
 	font-size: 38px;
+	padding: 30px 0 0 10px;
 }
 
 h1+p
 {
 	font-size: 18px;
 	font-weight: bold;
+	padding-left: 10px;
 }
 
 /*ligne horizontale*/
@@ -126,6 +129,7 @@ h1+p
 h2
 {
 	border-bottom: 2px solid #e1bee7;
+	font-size: 28px;
 }
 
 ul
@@ -136,11 +140,13 @@ ul
 #dotcircle
 {
 	color:#e1bee7;
+	margin-right: 1.5em;
 }
 
 #circle
 {
 	color:#e1bee7;
+	margin-right: 1.5em;
 }
 
 .recommandations
@@ -158,5 +164,6 @@ ul
 	margin-right: 2em;
 }
 
-/* partie Responsive -media queries */
-@media screen and (max-width: 680px)
+/* partie Responsive - bootstrap
+@media screen and (max-width=800px)
+*/
