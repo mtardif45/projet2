@@ -144,8 +144,9 @@ ul {
 
 /* partie responsive - Tablettes */
 @media all and (max-width=1024px) {
-  .liseret {
-    width: 100px;
+  .wrap {
+    width: 100%;
+    margin: 0;
   }
 }
 
