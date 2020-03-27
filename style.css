@@ -1,7 +1,7 @@
 /* organisation générale de ma page*/
 body {
   font-family: 'Source Sans Pro', Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #3a3b3c;
   width: 100%;
 }
@@ -21,12 +21,13 @@ body {
 }
 
 img {
-  border-radius: 57px;
+  border-radius: 50%;
   display: block;
   margin: 0 auto;
-  width: 120px;
-  height: 120px;
-}
+  width: 130px;
+  height: 130px;
+  padding-top: 10px;
+  }
 
 /*à propos de moi*/
 h3 {
@@ -81,7 +82,7 @@ i.leisure {
 }
 
 .date {
-  width: 150px;
+  width: 180px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -95,6 +96,11 @@ i.leisure {
 /*première section avec nom + métier */
 .prenom {
   color: #e1bee7;
+}
+
+#nom {
+  line-height: 0.5em;
+  padding-bottom: 80px;
 }
 
 h1 {
@@ -134,6 +140,10 @@ ul {
 }
 
 /*Bas de page / partie recommandations*/
+#recommandations {
+  padding-top: 20px;
+}
+
 .container {
   display: flex;
   padding-bottom: 10px;
@@ -141,6 +151,8 @@ ul {
 
 .reference {
   padding-right: 15%;
+  font-weight: bold;
+  line-height: 0.5em;
 }
 
 /*illustration des titres avec fontawesome*/
@@ -151,7 +163,7 @@ ul {
 }
 
 /* partie responsive - Tablettes */
-@media all and (max-width:768px) {
+@media all and (max-width:1024px) {
   body {
     font-size: 12px;
     padding-bottom: none;
@@ -163,6 +175,10 @@ ul {
     border: none;
   }
 
+  .liseret {
+    width: 25%;
+    }
+
   .contenu {
     margin-left: 0;
     padding: none;
@@ -172,48 +188,44 @@ ul {
   img {
     width: 100px;
     height: 100px;
-    padding-top: 10px;
   }
 
   h1 {
     font-size: 30px;
     padding: 10px;
   }
+
+  #nom {
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .icone {
+    margin-right: 0.5em;
+  }
+
+  .date {
+    width: 120px;
+  }
+
+  .etablissement {
+    width: 300px;
+  }
+
+  .reference {
+    padding-right: 15px;
+  }
+
+  #recommandations {
+    padding-top: 10%;
+  }
+
 }
 
-h4+p {
-  lign-height: 1em;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-.icone {
-  margin-right: 0.5em;
-}
-
-.date {
-  width: 100px;
-}
-
-.etablissement {
-  width: 300px;
-}
-
-.reference {
-  padding-right: 5px;
-}
-
-#recommandations {
-  padding-top: 20%;
-}
-
-.container {
-  padding: 0;
-}
-
-/* partie Responsive - Smartphones
+  /* partie Responsive - Smartphones
 @media all and (max-width=350px) {
   .liseret {
     width: 100px;
