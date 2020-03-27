@@ -27,7 +27,7 @@ img {
   width: 130px;
   height: 130px;
   padding-top: 10px;
-  }
+}
 
 /*à propos de moi*/
 h3 {
@@ -162,7 +162,7 @@ ul {
   margin-right: 2em;
 }
 
-/* partie responsive - Tablettes */
+/* partie responsive - Laptot Tablettes */
 @media all and (max-width:1024px) {
   body {
     font-size: 12px;
@@ -177,7 +177,7 @@ ul {
 
   .liseret {
     width: 25%;
-    }
+  }
 
   .contenu {
     margin-left: 0;
@@ -191,7 +191,7 @@ ul {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 28px;
     padding: 10px;
   }
 
@@ -199,8 +199,8 @@ ul {
     padding-bottom: 30px;
   }
 
-  h2 {
-    font-size: 20px;
+  h2, h3 {
+    font-size: 18px;
   }
 
   .icone {
@@ -222,14 +222,43 @@ ul {
   #recommandations {
     padding-top: 10%;
   }
-
 }
 
-  /* partie Responsive - Smartphones
-@media all and (max-width=350px) {
+/*partie Responsive - Tablettes*/
+@media all and (max-width:768px) {
   .liseret {
-    width: 100px;
-    display: flex;
+    width: 20%;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  ul {
+    padding-left: 0.5em;
+  }
+
+  .contenu {
+    margin-left: -1em;
+    font-size: 10px;
+  }
+  .date {
+    widht: 60px;
+  }
+  .etablissement {
+    width: 250px;
+  }
+  .reference {
+    padding-right: 10px;
+  }
+
+  #loisirs {
+    padding-top: 30%;
+  }
+  i.leisure {
+    font-size: 15px;
+    padding: 5px;
+    margin:0 10px;
   }
 }
-*/
