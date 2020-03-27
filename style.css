@@ -243,12 +243,15 @@ ul {
     margin-left: -1em;
     font-size: 10px;
   }
+
   .date {
     widht: 60px;
   }
+
   .etablissement {
     width: 250px;
   }
+
   .reference {
     padding-right: 10px;
   }
@@ -256,9 +259,50 @@ ul {
   #loisirs {
     padding-top: 30%;
   }
+
   i.leisure {
     font-size: 15px;
     padding: 5px;
-    margin:0 10px;
+    margin: 0 10px;
   }
+}
+
+@media all and (max-width:355px) {
+
+  .wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .liseret {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .contenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  header {
+    background-color: #e1bee7;
+    color: white;
+  }
+  .prenom {
+    color: black;
+    font-weight: bold;
+  }
+  .jobtitle {
+    text-decoration: underline solid white;
+  }
+
 }
