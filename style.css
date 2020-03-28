@@ -13,7 +13,11 @@ body {
   border: 1px solid black;
   margin: 0 auto;
 }
-
+/*partie centrale de la page*/
+main {
+  display: flex;
+  flex-direction: row;
+}
 /* haut de page - header*/
 header {
   display: flex;
@@ -30,8 +34,8 @@ img {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
 }
 
 .prenom {
@@ -84,12 +88,6 @@ h3+p {
 
 ul {
   list-style: none;
-}
-
-/*partie centrale de la page*/
-main {
-  display: flex;
-  flex-direction: row;
 }
 
 /*icones loisirs - bas de page*/
@@ -160,18 +158,15 @@ ul {
 #recommandations {
   padding-top: 20px;
 }
-
 .container {
   display: flex;
   padding-bottom: 10px;
 }
-
 .reference {
   padding-right: 15%;
   font-weight: bold;
   line-height: 0.5em;
 }
-
 /*illustration des titres avec fontawesome*/
 .icone {
   color: #e1bee7;
@@ -186,20 +181,21 @@ ul {
     padding-bottom: none;
     margin: 0;
   }
-
   .wrap {
     width: 100%;
     border: none;
   }
-
   .liseret {
-    width: 25%;
+    width: 20%;
+    margin-top: -1px;
   }
-
   .contenu {
     margin-left: 0;
     padding: none;
     font-size: 12px;
+  }
+  #photo {
+    width: 20%;
   }
 
   img {
@@ -239,26 +235,24 @@ ul {
   #recommandations {
     padding-top: 10%;
   }
+
+  #loisirs {
+    padding-top: 350px;
+  }
 }
 
 /*partie Responsive - Tablettes*/
 @media all and (max-width:768px) {
-  .liseret {
-    width: 20%;
+  main {
+    width: 100%;
   }
 
-  img {
-    width: 60px;
-    height: 60px;
+  .contenu {
+    width: 70%;
   }
 
   ul {
     padding-left: 0.5em;
-  }
-
-  .contenu {
-    margin-left: -1em;
-    font-size: 10px;
   }
 
   .date {
@@ -272,15 +266,22 @@ ul {
   .reference {
     padding-right: 10px;
   }
+  .liseret {
+    font-size: 10px;
+  }
 
-  #loisirs {
-    padding-top: 30%;
+  h3 {
+    font-size: 16px;
   }
 
   i.leisure {
     font-size: 15px;
     padding: 5px;
     margin: 0 10px;
+  }
+
+  #recommandations {
+    padding-top: 10px;
   }
 }
 
