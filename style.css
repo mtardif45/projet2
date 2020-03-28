@@ -8,16 +8,22 @@ body {
 
 .wrap {
   display: flex;
+  flex-direction: column;
   width: 50%;
   border: 1px solid black;
   margin: 0 auto;
 }
 
-/*partie gauche, le liseret */
-.liseret {
-  width: 30%;
-  background: #e1bee7;
-  font-weight: bold;
+/* haut de page - header*/
+header {
+  display: flex;
+  width: 100% flex-direction: row;
+}
+
+#photo {
+  background-color: #e1bee7;
+  width: 322px;
+  padding-top: 50px;
 }
 
 img {
@@ -26,7 +32,38 @@ img {
   margin: 0 auto;
   width: 130px;
   height: 130px;
-  padding-top: 10px;
+}
+
+.prenom {
+  color: #e1bee7;
+}
+
+.jobtitle {
+  text-decoration: underline solid #e1bee7;
+}
+
+#nom {
+  line-height: 0.5em;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  padding-left: 30px;
+}
+
+h1+p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+/*partie gauche, le liseret */
+.liseret {
+  width: 30%;
+  background: #e1bee7;
+  font-weight: bold;
 }
 
 /*à propos de moi*/
@@ -47,6 +84,12 @@ h3+p {
 
 ul {
   list-style: none;
+}
+
+/*partie centrale de la page*/
+main {
+  display: flex;
+  flex-direction: row;
 }
 
 /*icones loisirs - bas de page*/
@@ -91,32 +134,6 @@ i.leisure {
 .etablissement {
   width: 500px;
   text-align: justify;
-}
-
-/*première section avec nom + métier */
-.prenom {
-  color: #e1bee7;
-}
-
-#nom {
-  line-height: 0.5em;
-  padding-bottom: 80px;
-}
-
-h1 {
-  font-size: 40px;
-  padding: 30px 0 0 10px;
-}
-
-h1+p {
-  font-size: 20px;
-  font-weight: bold;
-  padding-left: 10px;
-}
-
-/*ligne horizontale*/
-.jobtitle {
-  text-decoration: underline solid #e1bee7;
 }
 
 /*section centrale du CV*/
@@ -268,7 +285,6 @@ ul {
 }
 
 @media all and (max-width:355px) {
-
   .wrap {
     flex-direction: column;
     width: 100%;
@@ -292,17 +308,4 @@ ul {
     width: 120px;
     height: 120px;
   }
-
-  header {
-    background-color: #e1bee7;
-    color: white;
-  }
-  .prenom {
-    color: black;
-    font-weight: bold;
-  }
-  .jobtitle {
-    text-decoration: underline solid white;
-  }
-
 }
