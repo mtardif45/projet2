@@ -23,7 +23,8 @@ main {
 /* haut de page - header*/
 header {
   display: flex;
-  width: 100% flex-direction: row;
+  width: 100%;
+  flex-direction: row;
 }
 
 #photo {
@@ -134,12 +135,15 @@ i.leisure {
 .etablissement {
   width: 500px;
   text-align: justify;
+  font-size: 14px;
+  padding-left: 1em;
 }
 
 /*section centrale du CV*/
 h2 {
   border-bottom: 2px solid #e1bee7;
   font-size: 30px;
+  width: 100%;
 }
 
 ul {
@@ -183,7 +187,7 @@ ul {
 @media all and (max-width:1024px) {
   body {
     font-size: 12px;
-    padding-bottom: none;
+    padding-bottom: 0;
     margin: 0;
   }
 
@@ -198,8 +202,8 @@ ul {
   }
 
   .contenu {
-    margin-left: 0;
-    padding-top: 0;
+    width: 75%;
+    padding: 0;
     font-size: 12px;
   }
 
@@ -230,15 +234,15 @@ ul {
   }
 
   .date {
-    width: 120px;
+    width: 20%;
   }
 
   .etablissement {
-    width: 300px;
+    width: 80%;
   }
 
-  .reference {
-    padding-right: 15px;
+  .container {
+    padding-right: 30px;
   }
 
   #recommandations {
@@ -257,12 +261,8 @@ ul {
   }
 
   .contenu {
-    width: 50%;
-    padding: 0.5em;
-  }
-
-  #nom {
-    padding-bottom: 0;
+    width: 70%;
+    padding: 1em;
   }
 
   img {
@@ -275,15 +275,22 @@ ul {
   }
 
   .date {
-    widht: 50px;
+    width: 100px;
   }
 
   .etablissement {
-    width: 200px;
+    width: 100%;
   }
 
-  .reference {
-    font-size: 9px;
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 12px;
+  }
+
+  #recommandations {
+    padding-top: 15px;
   }
 
   .liseret {
@@ -291,7 +298,7 @@ ul {
   }
 
   h3 {
-    padding: none;
+    padding: 0;
     font-size: 14px;
   }
 
@@ -306,66 +313,51 @@ ul {
   }
 
   #loisirs {
-    padding-top: 300px;
-  }
-
-  #recommandations {
-    padding-top: 0;
+    padding-top: 450px;
   }
 }
 
+/* responsive pour smartphone*/
 @media all and (max-width:355px) {
-  .wrap {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
   header {
     display: flex;
     flex-direction: column;
   }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   #photo {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  img {
-    width: 100px;
-    height: 100px;
-  }
+
   #nom {
-    padding-top: 0;
-    padding-left: 1em;
+    padding: 1em 0;
   }
+
   h1 {
     font-size: 20px;
   }
-  h1+p
-  {
+
+  h1+p {
     font-size: 18px;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .contenu {
-    width: 100%;
-    order: 1;
   }
 
   h2 {
     font-size: 16px;
   }
 
-  .formation {
-    width: 100%;
-  }
-
   .date {
     width: 60px;
+  }
+
+  .contenu {
+    width: auto;
+    margin: 0;
   }
 
   .dotcircle, .circle {
@@ -373,14 +365,21 @@ ul {
     font-size: 0.4em;
   }
 
+  .reference {
+    font-size: 10px;
+    padding: 5px 5px;
+    line-height: 1em;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
   .liseret {
     width: 100%;
-    order: 2
   }
 
   #loisirs {
-    padding-top: 0;
-    padding-bottom: 1em;
+    padding: 10px 0 10px 0;
   }
-
 }
