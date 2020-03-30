@@ -1,15 +1,69 @@
 /* organisation générale de ma page*/
 body {
   font-family: 'Source Sans Pro', Verdana, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   color: #3a3b3c;
-	border: 1px solid black;
   width: 100%;
 }
 
 .wrap {
   display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+/*partie centrale de la page*/
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+/* haut de page - header*/
+header {
+  display: flex;
   width: 100%;
+  flex-direction: row;
+}
+
+#photo {
+  background-color: #e1bee7;
+  width: 322px;
+  padding-top: 50px;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+.prenom {
+  color: #e1bee7;
+}
+
+.jobtitle {
+  text-decoration: underline solid #e1bee7;
+}
+
+#nom {
+  line-height: 0.5em;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  padding-left: 30px;
+}
+
+h1+p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 30px;
 }
 
 /*partie gauche, le liseret */
@@ -19,17 +73,9 @@ body {
   font-weight: bold;
 }
 
-img {
-  border-radius: 57px;
-	display: block;
-	margin: 0 auto;
-  width: 120px;
-  height: 120px;
-}
-
 /*à propos de moi*/
 h3 {
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   color: #e1bee7;
   background-color: #3a3b3c;
@@ -41,14 +87,17 @@ h3+p {
   text-align: justify;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 300px;
 }
 
 ul {
   list-style: none;
 }
 
-/*icones loisirs*/
+/*icones loisirs - bas de page*/
+#loisirs {
+  padding-top: 300px;
+}
+
 .loisirs {
   display: flex;
   justify-content: space-around;
@@ -59,14 +108,14 @@ i.leisure {
   border-radius: 50px;
   border: 1px solid black;
   margin-bottom: 20px;
-	padding:10px;
+  padding: 10px;
 }
 
 /*partie droite, contenu de la page*/
 .contenu {
   width: 70%;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 25px;
+  padding: 20px 20px;
   font-size: 14px;
 }
 
@@ -77,7 +126,7 @@ i.leisure {
 }
 
 .date {
-  width: 150px;
+  width: 180px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -86,33 +135,15 @@ i.leisure {
 .etablissement {
   width: 500px;
   text-align: justify;
-}
-
-/*première section avec nom + métier */
-.prenom {
-  color: #e1bee7;
-}
-
-h1 {
-  font-size: 38px;
-  padding: 30px 0 0 10px;
-}
-
-h1+p {
-  font-size: 18px;
-  font-weight: bold;
-  padding-left: 10px;
-}
-
-/*ligne horizontale*/
-.jobtitle {
-  text-decoration: underline solid #e1bee7;
+  font-size: 14px;
+  padding-left: 1em;
 }
 
 /*section centrale du CV*/
 h2 {
   border-bottom: 2px solid #e1bee7;
-  font-size: 28px;
+  font-size: 30px;
+  width: 100%;
 }
 
 ul {
@@ -129,10 +160,21 @@ ul {
   margin-right: 1.5em;
 }
 
-.recommandations {
+/*Bas de page / partie recommandations*/
+#recommandations {
+  padding-top: 20px;
+}
+
+.container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.reference {
+  font-weight: bold;
+  line-height: 0.5em;
 }
 
 /*illustration des titres avec fontawesome*/
@@ -142,17 +184,200 @@ ul {
   margin-right: 2em;
 }
 
-/* partie Responsive - Smartphones*/
-@media all and (max-width=350px) {
+/* partie responsive - Laptot */
+@media all and (max-width:1024px) {
+  body {
+    font-size: 12px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .wrap {
+    width: 100%;
+    border: none;
+  }
+
   .liseret {
+    width: 20%;
+    margin-top: -1px;
+  }
+
+  .contenu {
+    width: 75%;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  #photo {
+    width: 20%;
+  }
+
+  img {
     width: 100px;
-    display: flex;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  #nom {
+    padding-bottom: 30px;
+  }
+
+  h2, h3 {
+    font-size: 18px;
+  }
+
+  .icone {
+    margin-right: 0.5em;
+  }
+
+  .date {
+    width: 20%;
+  }
+
+  .etablissement {
+    width: 80%;
+  }
+
+  .container {
+    padding-right: 30px;
+  }
+
+  #recommandations {
+    padding-top: 10%;
+  }
+
+  #loisirs {
+    padding-top: 350px;
   }
 }
 
-/* partie responsive - Tablettes */
-@media all and (max-width=800px) {
-  .liseret {
+/*partie Responsive - Tablettes*/
+@media all and (max-width:768px) {
+  main {
+    width: 100%;
+  }
+
+  .contenu {
+    width: 70%;
+    padding: 1em;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  ul {
+    padding-left: 0.5em;
+  }
+
+  .date {
     width: 100px;
+  }
+
+  .etablissement {
+    width: 100%;
+  }
+
+  .container {
+      font-size: 12px;
+  }
+
+  #recommandations {
+    padding-top: 15px;
+  }
+
+  .liseret {
+    font-size: 10px;
+  }
+
+  h3 {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  h3+p {
+    padding: 5px 5px;
+  }
+
+  i.leisure {
+    font-size: 15px;
+    padding: 5px;
+    margin: 0 10px;
+  }
+
+  #loisirs {
+    padding-top: 450px;
+  }
+}
+
+/* responsive pour smartphone*/
+@media all and (max-width:355px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #photo {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #nom {
+    padding: 1em 0;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h1+p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .date {
+    width: 60px;
+  }
+
+  .contenu {
+    width: auto;
+    margin: 0;
+  }
+
+  .dotcircle, .circle {
+    margin-right: 0.5em;
+    font-size: 0.4em;
+  }
+
+  .reference {
+    font-size: 10px;
+    padding: 5px 5px;
+    line-height: 1em;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .liseret {
+    width: 100%;
+  }
+
+  #loisirs {
+    padding: 10px 0 10px 0;
   }
 }
