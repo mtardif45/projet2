@@ -95,7 +95,7 @@ ul {
 
 /*icones loisirs - bas de page*/
 #loisirs {
-  padding-top: 450px;
+  padding-top: 300px;
 }
 
 .loisirs {
@@ -167,11 +167,12 @@ ul {
 
 .container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   padding-bottom: 10px;
 }
 
 .reference {
-  padding-right: 15%;
   font-weight: bold;
   line-height: 0.5em;
 }
@@ -183,7 +184,7 @@ ul {
   margin-right: 2em;
 }
 
-/* partie responsive - Laptot Tablettes */
+/* partie responsive - Laptot */
 @media all and (max-width:1024px) {
   body {
     font-size: 12px;
@@ -283,10 +284,7 @@ ul {
   }
 
   .container {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    font-size: 12px;
+      font-size: 12px;
   }
 
   #recommandations {
