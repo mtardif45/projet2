@@ -6,6 +6,7 @@ body {
   width: 100%;
 }
 
+/*faire tenir mon CV au centre de la page Web*/
 .wrap {
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@ main {
   flex-direction: row;
 }
 
-/* haut de page - header*/
+/* haut de page - avec photo + nom et métier */
 header {
   display: flex;
   width: 100%;
@@ -118,6 +119,12 @@ i.leisure {
   padding: 20px 20px;
   font-size: 14px;
 }
+/*illustration des titres avec fontawesome*/
+.icone {
+  color: #e1bee7;
+  display: inline-block;
+  margin-right: 2em;
+}
 
 /*bloc formation*/
 .formation {
@@ -177,15 +184,26 @@ ul {
   line-height: 0.5em;
 }
 
-/*illustration des titres avec fontawesome*/
-.icone {
-  color: #e1bee7;
-  display: inline-block;
-  margin-right: 2em;
+/*responsive pour grand écran - affichage Gitpage*/
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+
+  #photo {
+    width: 190px;
+    padding-bottom: 20px;
+  }
+  header {
+    margin-bottom: -0.5em;
+  }
+  .contenu {
+    margin-left: 5px;
+  }
+  .date {
+    width: 140px;
+  }
 }
 
 /* partie responsive - Laptot */
-@media all and (max-width:1024px) {
+@media all and (max-width: 1024px) {
   body {
     font-size: 12px;
     padding-bottom: 0;
@@ -256,7 +274,7 @@ ul {
 }
 
 /*partie Responsive - Tablettes*/
-@media all and (max-width:768px) {
+@media all and (max-width: 768px) {
   main {
     width: 100%;
   }
@@ -284,7 +302,7 @@ ul {
   }
 
   .container {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   #recommandations {
@@ -316,7 +334,7 @@ ul {
 }
 
 /* responsive pour smartphone*/
-@media all and (max-width:355px) {
+@media all and (max-width: 355px) {
   header {
     display: flex;
     flex-direction: column;
