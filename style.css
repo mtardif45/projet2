@@ -293,16 +293,27 @@ ul {
     padding-left: 0.5em;
   }
 
+<<<<<<< HEAD
+=======
+  .contenu {
+    margin-left: -1em;
+    font-size: 10px;
+  }
+>>>>>>> parent of 35d675e... debut responsive 355px
   .date {
     width: 100px;
   }
-
   .etablissement {
     width: 100%;
   }
+<<<<<<< HEAD
 
   .container {
     font-size: 12px;
+=======
+  .reference {
+    padding-right: 10px;
+>>>>>>> parent of 35d675e... debut responsive 355px
   }
 
   #recommandations {
@@ -321,10 +332,10 @@ ul {
   h3+p {
     padding: 5px 5px;
   }
-
   i.leisure {
     font-size: 15px;
     padding: 5px;
+<<<<<<< HEAD
     margin: 0 10px;
   }
 
@@ -398,4 +409,8 @@ ul {
   #loisirs {
     padding: 10px 0 10px 0;
   }
+=======
+    margin:0 10px;
+  }
+>>>>>>> parent of 35d675e... debut responsive 355px
 }
