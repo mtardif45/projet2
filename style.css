@@ -24,9 +24,10 @@ img {
   width: 150px;
   height: 150px;
 }
+
 /*à propos de moi*/
 #presentation {
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 h3 {
@@ -47,11 +48,13 @@ ul {
 }
 
 /*icones loisirs - bas de page*/
+#loisirs {
+  padding-bottom: 20px;
+}
+
 .loisirs {
   display: flex;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
+  justify-content: space-around;
 }
 
 i.leisure {
@@ -144,7 +147,6 @@ h2 {
 .reference {
   line-height: 0.5em;
 }
-
 
 /* partie responsive - Laptot */
 /*
