@@ -148,214 +148,80 @@ h2 {
   line-height: 0.5em;
 }
 
-/* partie responsive - Laptot */
-/*
-@media all and (max-width: 1024px) {
+/* partie responsive - Tablet */
+@media all and (max-width: 768px) {
   body {
-    font-size: 12px;
-    padding-bottom: 0;
-    margin: 0;
-  }
-
-  .wrap {
     width: 100%;
-    border: none;
+    font-size: 12px;
   }
 
   .liseret {
-    width: 20%;
-    margin-top: -1px;
+    width: 25%;
   }
 
-  .contenu {
-    width: 75%;
-    padding: 0;
-    font-size: 12px;
-  }
-
-  #photo {
-    width: 20%;
-  }
-
-  img {
-    width: 100px;
-    height: 100px;
+  main {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   h1 {
-    font-size: 28px;
-    padding: 10px;
-  }
-
-  #nom {
-    padding-bottom: 30px;
-  }
-
-  h2, h3 {
-    font-size: 18px;
-  }
-
-  .icone {
-    margin-right: 0.5em;
-  }
-
-  .date {
-    width: 20%;
-  }
-
-  .etablissement {
-    width: 80%;
-  }
-
-  .container {
-    padding-right: 30px;
-  }
-
-  #recommandations {
-    padding-top: 10%;
-  }
-
-  #loisirs {
-    padding-top: 350px;
-  }
-}
-
-/*partie Responsive - Tablettes*/
-/*
-@media all and (max-width: 768px) {
-  main {
-    width: 100%;
-  }
-
-  .contenu {
-    width: 70%;
-    padding: 1em;
+    font-size: 34px;
   }
 
   img {
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
   }
 
-  ul {
-    padding-left: 0.5em;
-  }
-
-<<<<<<< HEAD
-=======
-  .contenu {
-    margin-left: -1em;
-    font-size: 10px;
-  }
->>>>>>> parent of 35d675e... debut responsive 355px
   .date {
-    width: 100px;
-  }
-  .etablissement {
-    width: 100%;
-  }
-<<<<<<< HEAD
-
-  .container {
-    font-size: 12px;
-=======
-  .reference {
-    padding-right: 10px;
->>>>>>> parent of 35d675e... debut responsive 355px
-  }
-
-  #recommandations {
-    padding-top: 15px;
-  }
-
-  .liseret {
-    font-size: 10px;
-  }
-
-  h3 {
-    padding: 0;
-    font-size: 14px;
-  }
-
-  h3+p {
-    padding: 5px 5px;
-  }
-  i.leisure {
-    font-size: 15px;
-    padding: 5px;
-<<<<<<< HEAD
-    margin: 0 10px;
-  }
-
-  #loisirs {
-    padding-top: 450px;
+    padding-right: 30px;
   }
 }
 
-
-/* responsive pour smartphone*/
-/*
+/*partie responsive Smartphones */
 @media all and (max-width: 355px) {
-  header {
+  body {
+    flex-direction: column-reverse;
+    font-size: 14px;
+    width: auto;
+  }
+
+  .liseret {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  main {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #photo {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  #nom {
-    padding: 1em 0;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  h1+p {
-    font-size: 18px;
-  }
-
-  h2 {
-    font-size: 16px;
-  }
-
-  .date {
-    width: 60px;
-  }
-
-  .contenu {
-    width: auto;
-    margin: 0;
-  }
-
-  .dotcircle, .circle {
-    margin-right: 0.5em;
-    font-size: 0.4em;
-  }
-
-  .reference {
-    font-size: 10px;
-    padding: 5px 5px;
-    line-height: 1em;
-  }
-
-  .container {
-    margin: 0 auto;
-  }
-
-  .liseret {
-    width: 100%;
+  #presentation {
+    padding-bottom: 0;
+    order: -1;
   }
 
   #loisirs {
-    padding: 10px 0 10px 0;
+    order: -1;
   }
+
+  main {
+    width: auto;
+  }
+
+.formation {
+  flex-direction: column;
+}
+
+.date {
+  width: 100%;
+  text-align: center;
+}
+
+.etablissement {
+  width: 100%;
+  text-align: justify;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+}
+}
