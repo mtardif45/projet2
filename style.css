@@ -149,22 +149,79 @@ h2 {
 }
 
 /* partie responsive - Tablet */
-
 @media all and (max-width: 768px) {
   body {
     width: 100%;
+    font-size: 12px;
+  }
+
+  .liseret {
+    width: 25%;
+  }
+
+  main {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 34px;
   }
 
   img {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
   }
 
   .date {
     padding-right: 30px;
   }
 }
+
 /*partie responsive Smartphones */
 @media all and (max-width: 355px) {
+  body {
+    flex-direction: column-reverse;
+    font-size: 14px;
+    width: auto;
+  }
 
+  .liseret {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #presentation {
+    padding-bottom: 0;
+    order: -1;
+  }
+
+  #loisirs {
+    order: -1;
+  }
+
+  main {
+    width: auto;
+  }
+
+.formation {
+  flex-direction: column;
+}
+
+.date {
+  width: 100%;
+  text-align: center;
+}
+
+.etablissement {
+  width: 100%;
+  text-align: justify;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+}
 }
