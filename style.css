@@ -152,18 +152,15 @@ h2 {
 @media all and (max-width: 768px) {
   body {
     width: 100%;
-    font-size: 12px;
   }
 
   .liseret {
-    width: 25%;
+    width: 30%;
   }
 
   main {
-    width: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+    width: 70%;
+}
 
   h1 {
     font-size: 34px;
@@ -175,7 +172,7 @@ h2 {
   }
 
   .date {
-    padding-right: 30px;
+    padding-right: 20px;
   }
 }
 
@@ -183,7 +180,6 @@ h2 {
 @media all and (max-width: 355px) {
   body {
     flex-direction: column-reverse;
-    font-size: 14px;
     width: auto;
   }
 
@@ -206,22 +202,22 @@ h2 {
     width: auto;
   }
 
-.formation {
-  flex-direction: column;
-}
+  .formation {
+    flex-direction: column;
+  }
 
-.date {
-  width: 100%;
-  text-align: center;
-}
+  .date {
+    width: 100%;
+    text-align: center;
+  }
 
-.etablissement {
-  width: 100%;
-  text-align: justify;
-}
+  .etablissement {
+    width: 100%;
+    text-align: justify;
+  }
 
-.container {
-  flex-direction: column;
-  align-items: center;
-}
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
