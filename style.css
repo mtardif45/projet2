@@ -148,21 +148,21 @@ h2 {
   line-height: 0.5em;
 }
 
+/*écran intermédiaite */
+@media all and (max-width: 1024px) {
+  body {
+    width: auto;
+  }
+}
+
 /* partie responsive - Tablet */
 @media all and (max-width: 768px) {
-  body {
-    width: 100%;
-    font-size: 12px;
-  }
-
   .liseret {
-    width: 25%;
+    width: 30%;
   }
 
   main {
-    width: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 70%;
   }
 
   h1 {
@@ -175,7 +175,7 @@ h2 {
   }
 
   .date {
-    padding-right: 30px;
+    padding-right: 20px;
   }
 }
 
@@ -183,7 +183,9 @@ h2 {
 @media all and (max-width: 355px) {
   body {
     flex-direction: column-reverse;
-    font-size: 14px;
+  }
+
+  main {
     width: auto;
   }
 
@@ -193,6 +195,14 @@ h2 {
     flex-direction: column;
   }
 
+  #nom {
+    padding-top: 20px;
+  }
+
+  img {
+    padding-top: 10px;
+  }
+
   #presentation {
     padding-bottom: 0;
     order: -1;
@@ -200,28 +210,25 @@ h2 {
 
   #loisirs {
     order: -1;
+    border-bottom: 2px solid #3a3b3c;
   }
 
-  main {
-    width: auto;
+  .formation {
+    flex-direction: column;
   }
 
-.formation {
-  flex-direction: column;
-}
+  .date {
+    width: 100%;
+    text-align: center;
+  }
 
-.date {
-  width: 100%;
-  text-align: center;
-}
+  .etablissement {
+    width: 100%;
+    text-align: justify;
+  }
 
-.etablissement {
-  width: 100%;
-  text-align: justify;
-}
-
-.container {
-  flex-direction: column;
-  align-items: center;
-}
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
