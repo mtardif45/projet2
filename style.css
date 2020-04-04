@@ -148,12 +148,15 @@ h2 {
   line-height: 0.5em;
 }
 
+/*écran intermédiaite */
+@media all and (max-width: 1024px) {
+  body {
+    width: auto;
+  }
+}
+
 /* partie responsive - Tablet */
 @media all and (max-width: 768px) {
-  body {
-    width: 100%;
-  }
-
   .liseret {
     width: 30%;
   }
@@ -180,12 +183,11 @@ h2 {
 @media all and (max-width: 355px) {
   body {
     flex-direction: column-reverse;
-    width: auto;
   }
 
   main {
-  width: auto;
-}
+    width: auto;
+  }
 
   .liseret {
     width: 100%;
@@ -211,7 +213,7 @@ h2 {
     border-bottom: 2px solid #3a3b3c;
   }
 
-    .formation {
+  .formation {
     flex-direction: column;
   }
 
