@@ -183,10 +183,22 @@ h2 {
     width: auto;
   }
 
+  main {
+  width: auto;
+}
+
   .liseret {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+
+  #nom {
+    padding-top: 20px;
+  }
+
+  img {
+    padding-top: 10px;
   }
 
   #presentation {
@@ -196,13 +208,10 @@ h2 {
 
   #loisirs {
     order: -1;
+    border-bottom: 2px solid #3a3b3c;
   }
 
-  main {
-    width: auto;
-  }
-
-  .formation {
+    .formation {
     flex-direction: column;
   }
 
